@@ -14,38 +14,43 @@
 <div class="main-content">
   <section class="section">
     <div class="section-header">
-        <h1>Data Kelas </h1>
+        <h1>Data Siswa </h1>
     </div>
     <div class="section-body">
       <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a href="create.php" class="btn btn-success">Tambah Data Kelas</a>
+              <a href="create.php" class="btn btn-success">Tambah Data Siswa</a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered table-md">
                   <tr>
-                    <th>#</th>
-                    <th>ID Kelas</th>
-                    <th>Nama Kelas</th>
-                    <th>Kompetensi Keahlian</th>
+                    <th>NISN</th>
+                    <th>NIS</th>
+                    <th>Nama Siswa</th>
+                    <th>Id Kelas</th>
+                    <th>Alamat</th>
+                    <th>No Telp</th>
+                    <th>Id Spp</th>
                     <th>Action</th>
                   </tr>
                   <?php
                     include "../koneksi.php";
-                    $query_mysql = mysqli_query($koneksi, "SELECT * FROM kelas ");
-                    $nomor = 1;
+                    $query_mysql = mysqli_query($koneksi, "SELECT * FROM siswa");
                     while($data = mysqli_fetch_array($query_mysql)){ ?>
                   <tr>
-                    <td><?php echo $nomor++; ?></td>
+                    <td><?php echo $data['nisn']; ?></td>
+                    <td><?php echo $data['nis']; ?></td>
+                    <td><?php echo $data['nama']; ?></td>
                     <td><?php echo $data['id_kelas']; ?></td>
-                    <td><?php echo $data['nama_kelas']; ?></td>
-                    <td><?php echo $data['kompetensi_keahlian']; ?></td>
+                    <td><?php echo $data['alamat']; ?></td>
+                    <td><?php echo $data['no_telp']; ?></td>
+                    <td><?php echo $data['id_spp']; ?></td>
                     <td style="width: 20%;">
-                        <a href="update.php?id_kelas=<?= $data['id_kelas']; ?>" class="btn btn-warning my-1">Update</a>
-                        <a href="action-delete.php?id_kelas=<?= $data['id_kelas']; ?>" class="btn btn-danger my-1">Delete</a>
+                        <a href="update.php?id_kelas=<?= $data['nisn']; ?>" class="btn btn-warning my-1">Update</a>
+                        <a href="action-delete.php?id_kelas=<?= $data['nisn']; ?>" class="btn btn-danger my-1">Delete</a>
                         <a href="#" class="btn btn-secondary my-1">Detail</a>
                     </td>
                   </tr>

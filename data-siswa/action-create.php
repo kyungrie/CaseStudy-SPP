@@ -1,11 +1,15 @@
 <?php
   if (count($_POST) > 0) {
+    $nisn =$_POST['nisn'];
+    $nis =$_POST['nis'];
+    $nama =$_POST['nama'];
     $idKelas =$_POST['id_kelas'];
-    $namaKelas =$_POST['nama_kelas'];
-    $kompetensiKeahlian =$_POST['kompetensi_keahlian'];
+    $alamat =$_POST['alamat'];
+    $noTelp =$_POST['no_telp'];
+    $idSpp =$_POST['id_spp'];
 
     include("../koneksi.php");
-    $result =mysqli_query($koneksi,"INSERT INTO kelas(id_kelas,nama_kelas,kompetensi_keahlian) VALUES('$idKelas','$namaKelas','$kompetensiKeahlian')");
+    $result =mysqli_query($koneksi,"INSERT INTO siswa(nisn,nis,nama,id_kelas,alamat,no_telp,id_spp) VALUES('$nisn','$nis','$nama','$idKelas','$alamat','$noTelp','$idSpp')");
 
     if ($result) {
       echo "<script>alert('Data Kelas berhasil ditambahkan'); window.location.href='read.php'</script>";
