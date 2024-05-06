@@ -32,7 +32,7 @@
                 <div class="card-body">
                     <div class="mb-3">
                       <label for="nisn" class="from-label">NISN</label>
-                      <input type="number" class="from-control" id="nisn" name="nisn" value="<?php echo $data['nisn']; ?>">
+                      <input type="number" class="from-control" id="nisn" name="nisn" value="<?php echo $data['nisn']; ?>" readonly> 
                     </div>
                     <div class="mb-3">
                       <label for="nis" class="from-label">NIS</label>

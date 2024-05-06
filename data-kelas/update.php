@@ -32,7 +32,7 @@
                 <div class="card-body">
                     <div class="form-group">
                       <label for="id_kelas" class="from-label">ID Kelas</label> <br>
-                      <input type="text" class="from-control w-75" id="id_kelas" name="id_kelas" value="<?php echo $data['id_kelas']; ?>">
+                      <input type="text" class="from-control w-75" id="id_kelas" name="id_kelas" value="<?php echo $data['id_kelas']; ?>" readonly>
                     </div>
                     <div class="mb-3">
                       <label for="nama_kelas" class="from-label">Nama Kelas</label> <br>
