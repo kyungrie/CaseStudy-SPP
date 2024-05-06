@@ -42,7 +42,7 @@
                       <label for="kompetensi_keahlian" class="from-label">Kompetensi Keahlian</label> <br>
                       <select class="from-control w-75" aria-label="select" id="kompetensi_keahlian" name="kompetensi_keahlian">
                         <option selected value="<?php echo $data['kompetensi_keahlian']; ?>">
-                          <hr />
+                            <?php echo $data['kompetensi_keahlian']; ?>
                         </option>
                         <option value="RPL">RPL</option>
                         <option value="TAV">TAV</option>
