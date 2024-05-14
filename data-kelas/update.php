@@ -51,7 +51,7 @@
                         <option value="TBSM">TBSM</option>
                       </select>
                     </div>
-                    <button type="submit" class="btn btn-primary w-75">Submit</button>
+                    <button type="submit" value="submit" name="Submit" class="btn btn-primary w-75">Submit</button>
                 </div>
               </form>
           </div>

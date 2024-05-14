@@ -56,7 +56,7 @@
                         <option value="petugas">Petugas Biasa</option>
                       </select>
                     </div>
-                    <button type="submit" class="btn btn-primary w-75">Submit</button>
+                    <button type="submit" name="Submit" class="btn btn-primary w-75">Submit</button>
                 </div>
               </form>
           </div>

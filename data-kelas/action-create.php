@@ -1,5 +1,5 @@
 <?php
-  if (count($_POST) > 0) {
+  if (isset($_POST['Submit'])) {
     $idKelas =$_POST['id_kelas'];
     $namaKelas =$_POST['nama_kelas'];
     $kompetensiKeahlian =$_POST['kompetensi_keahlian'];

@@ -46,7 +46,7 @@
                       <label for="keterangan" class="from-label">Keterangan</label> <br>
                       <input type="text" class="from-control w-75" id="keterangan" name="keterangan" value="<?php echo $data['keterangan']; ?>">
                     </div>
-                    <button type="submit" class="btn btn-primary w-75">Submit</button>
+                    <button type="submit" name="Submit" class="btn btn-primary w-75">Submit</button>
                 </div>
               </form>
           </div>

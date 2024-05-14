@@ -46,11 +46,11 @@
 
 
           <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="../logout.php" class="btn btn-danger btn-lg btn-block btn-icon-split">
+              <i class="fas fa-sign-out-alt"></i>Log Out
+            </a>
             <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
               <i class="fas fa-rocket"></i> Documentation
-            </a>
-            <a href="../logout.php" class="btn btn-primary btn-lg btn-block btn-icon-split">
-              <i class="fas fa-sign-out-alt"></i>Log Out
             </a>
           </div>
       </div>

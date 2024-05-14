@@ -75,7 +75,7 @@
                         <option value="3">3</option>
                       </select>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    <button type="submit" name="Submit" class="btn btn-primary w-100">Submit</button>
                 </div>
               </form>
           </div>

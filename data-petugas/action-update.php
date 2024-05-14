@@ -1,5 +1,5 @@
 <?php
-  if (count($_POST) >= 3) {
+  if (isset($_POST['Submit'])) {
     $idPetugas =$_POST['id_petugas'];
     $username =$_POST['username'];
     $password = md5($_POST['password']);

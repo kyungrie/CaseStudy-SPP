@@ -44,7 +44,7 @@
                       </select>
                     </div>
                 <div class="form-group">
-                    <button type="submit" value="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                    <button type="submit" name="Submit" value="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                       SUBMIT
                     </button>
                   </div>

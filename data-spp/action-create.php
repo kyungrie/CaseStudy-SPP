@@ -1,5 +1,5 @@
 <?php
-  if (count($_POST) > 0) {
+  if (isset($_POST['Submit'])) {
     $idSpp =$_POST['id_spp'];
     $tahun =$_POST['tahun'];
     $nominal =$_POST['nominal'];

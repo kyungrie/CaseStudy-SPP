@@ -1,5 +1,5 @@
 <?php
-  if (count($_POST) > 0) {
+  if (isset($_POST['Submit'])) {
     $nisn =$_POST['nisn'];
     $nis =$_POST['nis'];
     $nama =$_POST['nama'];
